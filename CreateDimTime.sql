@@ -25,7 +25,7 @@ WITH DateSequence ([Date]) AS
     SELECT dateadd(day, 1, [Date]) FROM DateSequence WHERE [Date] < @todate
 )
 SELECT  CONVERT(VARCHAR,[Date],112)														AS [Date]
-	,CONVERT(VARCHAR(10),[Date],126)													AS [DateType1]
+	,CONVERT(VARCHAR(10),[Date],126)														AS [DateType1]
 	,CONVERT(VARCHAR,[Date],102)														AS [DateType2]
 	,CONVERT(VARCHAR,[Date],100)														AS [DateType3]
 	,[Date]																	AS [DateType4]
